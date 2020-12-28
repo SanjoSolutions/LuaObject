@@ -9,7 +9,7 @@ end
 local function keys(object)
     local result = {}
     for key, _ in pairs(object) do
-        table.insert(key)
+        table.insert(result, key)
     end
     return result
 end
