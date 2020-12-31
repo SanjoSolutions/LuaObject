@@ -14,6 +14,14 @@ local function keys(object)
     return result
 end
 
+local function values(object)
+    local result = {}
+    for _, value in pairs(object) do
+        table.insert(result, value)
+    end
+    return result
+end
+
 local function entries(object)
     local list = {}
     for key, value in pairs(object) do
@@ -25,5 +33,6 @@ end
 Object = {
     copy = copy,
     keys = keys,
+    values = values,
     entries = entries
 }
