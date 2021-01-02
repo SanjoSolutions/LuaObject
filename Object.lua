@@ -30,9 +30,25 @@ local function entries(object)
     return list
 end
 
+local function equals(a, b)
+    local keysA = Set.create(Object.keys(a))
+    local keysB = Set.create(Object.keys(b))
+    if not Set.equals(keysA, keysB) then
+        return false
+    end
+    local keys = keysA
+    for key in Set.iterator(keys) do
+        if a[key] ~= b[key] then
+            return false
+        end
+    end
+    return true
+end
+
 Object = {
     copy = copy,
     keys = keys,
     values = values,
-    entries = entries
+    entries = entries,
+    equals = equals
 }
