@@ -45,10 +45,25 @@ local function equals(a, b)
     return true
 end
 
+local function assignObject(object, objectB)
+    for key, value in pairs(objectB) do
+        object[key] = value
+    end
+end
+
+local function assign(object, ...)
+    local objects = {...}
+    for _, objectB in ipairs(objects) do
+        assignObject(object, objectB)
+    end
+    return object
+end
+
 Object = {
     copy = copy,
     keys = keys,
     values = values,
     entries = entries,
-    equals = equals
+    equals = equals,
+    assign = assign
 }
