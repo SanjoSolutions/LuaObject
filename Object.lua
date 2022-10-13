@@ -59,11 +59,31 @@ local function assign(object, ...)
     return object
 end
 
+local function count(object)
+    local count = 0
+    for _, _ in pairs(object) do
+       count = count + 1
+    end
+    return count
+end
+
+local function every(object, prefix)
+    for key, value in pairs(object) do
+        if not prefix(value, key) then
+            return false
+        end
+    end
+
+    return true
+end
+
 Object = {
     copy = copy,
     keys = keys,
     values = values,
     entries = entries,
     equals = equals,
-    assign = assign
+    assign = assign,
+    count = count,
+    every = every,
 }
