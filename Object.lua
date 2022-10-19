@@ -31,8 +31,8 @@ local function entries(object)
 end
 
 local function equals(a, b)
-    local keysA = Set.create(Object.keys(a))
-    local keysB = Set.create(Object.keys(b))
+    local keysA = Set.create(keys(a))
+    local keysB = Set.create(keys(b))
     if not Set.equals(keysA, keysB) then
         return false
     end
@@ -87,3 +87,5 @@ Object = {
     count = count,
     every = every,
 }
+
+Object2 = Object
