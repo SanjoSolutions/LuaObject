@@ -25,7 +25,7 @@ end
 local function entries(object)
     local list = {}
     for key, value in pairs(object) do
-        table.insert(list, {key, value})
+        table.insert(list, {key = key, value = value})
     end
     return list
 end
@@ -77,6 +77,14 @@ local function every(object, prefix)
     return true
 end
 
+local function fromEntries(entries)
+  local object = {}
+  for _, entry in ipairs(entries) do
+    object[entry.key] = entry.value
+  end
+  return object
+end
+
 Object = {
     copy = copy,
     keys = keys,
@@ -86,6 +94,7 @@ Object = {
     assign = assign,
     count = count,
     every = every,
+    fromEntries = fromEntries
 }
 
 Object2 = Object
