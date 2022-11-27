@@ -94,7 +94,7 @@ local function remove(object, key)
 end
 
 local function hasKeys(object)
-  return toBoolean(next(object))
+  return Boolean.toBoolean(next(object))
 end
 
 Object = {
