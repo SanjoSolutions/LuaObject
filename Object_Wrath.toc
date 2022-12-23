@@ -1,5 +1,5 @@
 ## Title: Object
 ## Interface: 30400
-## Version: 1.0.0
+## Dependencies: Set, Boolean
 
-Object.xml
+Object.lua
