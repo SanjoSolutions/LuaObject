@@ -1,5 +1,5 @@
 ## Title: Object
 ## Interface: 11403
-## Dependencies: Set, Boolean
+## Version: 1.0.0
 
-Object.lua
+Object.xml
