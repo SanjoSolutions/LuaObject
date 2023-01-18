@@ -109,7 +109,8 @@ Object = {
   fromEntries = fromEntries,
   isEmpty = isEmpty,
   remove = remove,
-  hasKeys = hasKeys
+  hasKeys = hasKeys,
+  hasEntries = hasKeys,
 }
 
 Object2 = Object
