@@ -2,7 +2,7 @@
 
 This work is devoted to God.
 
-A library of functions for objects which can be used by other add-ons to save some development work.
+A library of functions for working with objects. It can be used by other add-ons to save some development work.
 
 An object is regarded to be a Lua table with zero or more key-value pairs.
 
