@@ -1,7 +1,6 @@
 ## Title: Object
 ## Interface: 30400
-## Dependencies: Set, Boolean
 ## Version: 1.0.0
-## OptionalDeps: Library
+## OptionalDeps: Library, Set, Boolean
 
 Object.lua
