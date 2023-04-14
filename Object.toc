@@ -2,5 +2,7 @@
 ## Interface: 100007
 ## Dependencies: Set, Boolean
 ## Version: 1.0.0
+## OptionalDeps: Library
+
 
 Object.lua
