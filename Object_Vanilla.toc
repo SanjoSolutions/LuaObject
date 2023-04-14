@@ -3,4 +3,4 @@
 ## Version: 1.0.0
 ## OptionalDeps: Library, Set, Boolean
 
-Object.lua
+Object.xml
