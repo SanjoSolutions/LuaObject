@@ -1,0 +1,8 @@
+{
+  "name": "Object",
+  "dependencies": {
+    "Library": "SanjoSolutions/LuaLibrary#v0.4.0",
+    "Set": "SanjoSolutions/LuaSet#v1.1.0",
+    "Boolean": "SanjoSolutions/LuaBoolean#v1.1.0"
+  }
+}
