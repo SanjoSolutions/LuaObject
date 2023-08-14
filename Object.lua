@@ -1,13 +1,13 @@
 local addOnName = 'Object'
-local version = '1.0.0'
+local version = '1.1.0'
 
 if (_G.Library and not Library.isRegistered(addOnName, version)) or not _G.Library then
   local Set
   local Boolean
 
   if _G.Library then
-    Set = Library.retrieve('Set', '^1.0.0')
-    Boolean = Library.retrieve('Boolean', '^1.0.0')
+    Set = Library.retrieve('Set', '^1.1.0')
+    Boolean = Library.retrieve('Boolean', '^2.0.0')
   else
     Set = _G.Set
     Boolean = _G.Boolean
