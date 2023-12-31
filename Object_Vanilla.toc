@@ -1,6 +1,6 @@
 ## Title: Object
 ## Interface: 11403
-## Version: 1.1.0
+## Version: 1.1.1
 ## OptionalDeps: Library, Set, Boolean
 
 Object.xml
